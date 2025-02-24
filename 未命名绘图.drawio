@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-21T02:08:03.167Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="xj2XuAy7pdIQbi0osb6H" version="21.6.1" type="github">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.15" pages="3">
   <diagram name="第 1 页" id="PTcxKqWH0xkM7muXZV0k">
     <mxGraphModel dx="1194" dy="656" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -90,6 +90,82 @@
         </mxCell>
         <mxCell id="2fL33ab8OKWXe1lgJidz-23" value="编码，发送到指定的服务器" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="185" y="648" width="170" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="2B9TpuVB-wjQnq9SBijG" name="第 2 页">
+    <mxGraphModel dx="2074" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yfK9CCpDQtkfE_GW-6aD-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="yfK9CCpDQtkfE_GW-6aD-1" target="yfK9CCpDQtkfE_GW-6aD-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yfK9CCpDQtkfE_GW-6aD-1" value="前端防抖，按钮点击之后致灰" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yfK9CCpDQtkfE_GW-6aD-10" value="10w用户1000件商品" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="405" y="98" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yfK9CCpDQtkfE_GW-6aD-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yfK9CCpDQtkfE_GW-6aD-11" target="yfK9CCpDQtkfE_GW-6aD-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yfK9CCpDQtkfE_GW-6aD-11" value="后端互斥锁&lt;div&gt;用redis缓存用户id+商品id做一个10s超时的key，检查key是否存在，不存在时再处理请求&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="412" y="360" width="116" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yfK9CCpDQtkfE_GW-6aD-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yfK9CCpDQtkfE_GW-6aD-12" target="yfK9CCpDQtkfE_GW-6aD-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yfK9CCpDQtkfE_GW-6aD-12" value="消息队列削峰处理" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yfK9CCpDQtkfE_GW-6aD-15" value="实际库存扣减的时候使用事务保证操作的原子性" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="R5xyAbopfsKVG4uLmnTb" name="第 3 页">
+    <mxGraphModel dx="2074" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cQQ2iw7-pksbmoP-gJDA-4" value="" style="whiteSpace=wrap;html=1;container=1;" vertex="1" parent="1">
+          <mxGeometry x="74.46" y="570" width="846.86" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="cQQ2iw7-pksbmoP-gJDA-3" value="接入层" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;container=0;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="cQQ2iw7-pksbmoP-gJDA-4">
+          <mxGeometry x="43.428717948717946" y="32.57142857142857" width="65.14307692307692" height="32.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="cQQ2iw7-pksbmoP-gJDA-12" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;负载均衡&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="cQQ2iw7-pksbmoP-gJDA-4">
+          <mxGeometry x="230" y="40" width="31" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="cQQ2iw7-pksbmoP-gJDA-13" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;限流&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="cQQ2iw7-pksbmoP-gJDA-4">
+          <mxGeometry x="345.54" y="40" width="31" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="cQQ2iw7-pksbmoP-gJDA-5" value="" style="whiteSpace=wrap;html=1;container=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="1070" width="855.78" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="cQQ2iw7-pksbmoP-gJDA-6" value="服务层" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="cQQ2iw7-pksbmoP-gJDA-5">
+          <mxGeometry x="20.136000000000003" y="10.64516129032258" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cQQ2iw7-pksbmoP-gJDA-14" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;库存服务&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="cQQ2iw7-pksbmoP-gJDA-5">
+          <mxGeometry x="220" y="10.650000000000091" width="31" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="cQQ2iw7-pksbmoP-gJDA-15" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;订单服务&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="cQQ2iw7-pksbmoP-gJDA-5">
+          <mxGeometry x="360" y="10" width="31" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="cQQ2iw7-pksbmoP-gJDA-8" value="" style="whiteSpace=wrap;html=1;container=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="1540" width="850" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="cQQ2iw7-pksbmoP-gJDA-9" value="数据层" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="cQQ2iw7-pksbmoP-gJDA-8">
+          <mxGeometry x="20.238095238095237" y="20.74074074074074" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cQQ2iw7-pksbmoP-gJDA-16" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;缓存&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="cQQ2iw7-pksbmoP-gJDA-8">
+          <mxGeometry x="210" y="20.74000000000001" width="31" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="cQQ2iw7-pksbmoP-gJDA-17" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;数据库&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="cQQ2iw7-pksbmoP-gJDA-8">
+          <mxGeometry x="360" y="20.74000000000001" width="31" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
