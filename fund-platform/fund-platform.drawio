@@ -1,78 +1,100 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="26.2.15" pages="2">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.6" pages="2">
   <diagram name="基金每日更新流程" id="FoTLk0aqGKXJ9571WYP6">
     <mxGraphModel dx="2066" dy="1111" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="6fnQukPDXf7rgxu9gMie-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6fnQukPDXf7rgxu9gMie-1" target="6fnQukPDXf7rgxu9gMie-6">
+        <mxCell id="6fnQukPDXf7rgxu9gMie-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6fnQukPDXf7rgxu9gMie-1" target="6fnQukPDXf7rgxu9gMie-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="460" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6fnQukPDXf7rgxu9gMie-5" value="每日晚上16:00" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="6fnQukPDXf7rgxu9gMie-4">
+        <mxCell id="6fnQukPDXf7rgxu9gMie-5" value="每日16:00" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6fnQukPDXf7rgxu9gMie-4" vertex="1" connectable="0">
           <mxGeometry x="-0.05" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6fnQukPDXf7rgxu9gMie-1" value="定时任务" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="340" y="220" width="120" height="60" as="geometry" />
+        <mxCell id="6fnQukPDXf7rgxu9gMie-1" value="定时任务" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="250" y="220" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6fnQukPDXf7rgxu9gMie-3" value="从外部更新基金净值" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="6fnQukPDXf7rgxu9gMie-3" value="从外部更新基金净值" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="620" y="390" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6fnQukPDXf7rgxu9gMie-6" value="保存基金净值历史数据" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="340" y="390" width="120" height="60" as="geometry" />
+        <mxCell id="6fnQukPDXf7rgxu9gMie-6" value="保存基金净值历史数据" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="250" y="390" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6fnQukPDXf7rgxu9gMie-10" value="计算一下数据：&lt;div&gt;1、累计净值&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2、日收益率&lt;/span&gt;&lt;/div&gt;&lt;div&gt;3、周收益率&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;4、月收益率&lt;/span&gt;&lt;/div&gt;&lt;div&gt;5、季度收益率&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;6、年收益率&lt;/span&gt;&lt;/div&gt;&lt;div&gt;7、成交量&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;8、成交额&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;9、总资产&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;10、总份额&lt;/span&gt;&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;align=left;size=0.21428571428571427;" vertex="1" parent="1">
-          <mxGeometry x="285" y="600" width="230" height="140" as="geometry" />
+        <mxCell id="6fnQukPDXf7rgxu9gMie-10" value="计算一下数据：&lt;div&gt;1、累计净值&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2、日收益率&lt;/span&gt;&lt;/div&gt;&lt;div&gt;3、周收益率&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;4、月收益率&lt;/span&gt;&lt;/div&gt;&lt;div&gt;5、季度收益率&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;6、年收益率&lt;/span&gt;&lt;/div&gt;&lt;div&gt;7、成交量&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;8、成交额&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;9、总资产&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;10、总份额&lt;/span&gt;&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;align=left;size=0.21428571428571427;" parent="1" vertex="1">
+          <mxGeometry x="270" y="610" width="230" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="6fnQukPDXf7rgxu9gMie-11" value="计算日收益率，年化收益率，更新基金信息" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+        <mxCell id="6fnQukPDXf7rgxu9gMie-11" value="计算日收益率，年化收益率，更新基金信息" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" parent="1" vertex="1">
           <mxGeometry x="600" y="570" width="140" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="6fnQukPDXf7rgxu9gMie-12" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0.392;entryY=0.013;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="6fnQukPDXf7rgxu9gMie-3" target="6fnQukPDXf7rgxu9gMie-11">
+        <mxCell id="6fnQukPDXf7rgxu9gMie-12" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0.392;entryY=0.013;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryPerimeter=0;" parent="1" source="6fnQukPDXf7rgxu9gMie-3" target="6fnQukPDXf7rgxu9gMie-11" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="390" y="590" as="sourcePoint" />
             <mxPoint x="440" y="540" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6fnQukPDXf7rgxu9gMie-13" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0.413;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.417;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="6fnQukPDXf7rgxu9gMie-6" target="6fnQukPDXf7rgxu9gMie-10">
+        <mxCell id="6fnQukPDXf7rgxu9gMie-13" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0.413;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.158;exitY=0.983;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="seLQMcmzHpJejmK4kxlH-2" target="6fnQukPDXf7rgxu9gMie-10" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="470" y="590" as="sourcePoint" />
             <mxPoint x="440" y="540" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6fnQukPDXf7rgxu9gMie-14" value="定时任务" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="6fnQukPDXf7rgxu9gMie-14" value="定时任务" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="620" y="220" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6fnQukPDXf7rgxu9gMie-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6fnQukPDXf7rgxu9gMie-14" target="6fnQukPDXf7rgxu9gMie-3">
+        <mxCell id="6fnQukPDXf7rgxu9gMie-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6fnQukPDXf7rgxu9gMie-14" target="6fnQukPDXf7rgxu9gMie-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6fnQukPDXf7rgxu9gMie-16" value="每日晚上17::00" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="6fnQukPDXf7rgxu9gMie-15">
+        <mxCell id="6fnQukPDXf7rgxu9gMie-16" value="每日17::00" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6fnQukPDXf7rgxu9gMie-15" vertex="1" connectable="0">
           <mxGeometry x="0.1" y="-4" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6fnQukPDXf7rgxu9gMie-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6fnQukPDXf7rgxu9gMie-17" target="6fnQukPDXf7rgxu9gMie-18">
+        <mxCell id="6fnQukPDXf7rgxu9gMie-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6fnQukPDXf7rgxu9gMie-17" target="6fnQukPDXf7rgxu9gMie-18" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6fnQukPDXf7rgxu9gMie-20" value="T+1日1:05" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="6fnQukPDXf7rgxu9gMie-19">
+        <mxCell id="6fnQukPDXf7rgxu9gMie-20" value="T+1日1:05" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6fnQukPDXf7rgxu9gMie-19" vertex="1" connectable="0">
           <mxGeometry x="0.0333" y="3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6fnQukPDXf7rgxu9gMie-17" value="定时任务" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="6fnQukPDXf7rgxu9gMie-17" value="定时任务" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="910" y="220" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6fnQukPDXf7rgxu9gMie-18" value="将所有待处理的订单确认，并更新个人持仓" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="6fnQukPDXf7rgxu9gMie-18" value="将所有待处理的订单确认，并更新个人持仓" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="910" y="390" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6fnQukPDXf7rgxu9gMie-21" value="1、fund_transaction表的订单状态更新，确认实际份额&lt;div&gt;2、每个订单计算出份额之后更新个人持仓&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+        <mxCell id="6fnQukPDXf7rgxu9gMie-21" value="1、fund_transaction表的订单状态更新，确认实际份额&lt;div&gt;2、每个订单计算出份额之后更新个人持仓&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" parent="1" vertex="1">
           <mxGeometry x="840" y="560" width="210" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="6fnQukPDXf7rgxu9gMie-22" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="6fnQukPDXf7rgxu9gMie-18" target="6fnQukPDXf7rgxu9gMie-21">
+        <mxCell id="6fnQukPDXf7rgxu9gMie-22" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="6fnQukPDXf7rgxu9gMie-18" target="6fnQukPDXf7rgxu9gMie-21" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="390" y="590" as="sourcePoint" />
             <mxPoint x="440" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="seLQMcmzHpJejmK4kxlH-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="seLQMcmzHpJejmK4kxlH-1" target="seLQMcmzHpJejmK4kxlH-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="seLQMcmzHpJejmK4kxlH-4" value="每日16:30" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="seLQMcmzHpJejmK4kxlH-3">
+          <mxGeometry x="-0.2" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="seLQMcmzHpJejmK4kxlH-1" value="定时任务" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="seLQMcmzHpJejmK4kxlH-2" value="将计算任务加入到线程次" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="seLQMcmzHpJejmK4kxlH-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.174;entryY=0.007;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6fnQukPDXf7rgxu9gMie-6" target="6fnQukPDXf7rgxu9gMie-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="seLQMcmzHpJejmK4kxlH-6" value="异步计算，使用线程池的多线程&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="seLQMcmzHpJejmK4kxlH-5">
+          <mxGeometry x="-0.3043" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
